@@ -1,7 +1,6 @@
 import keywords as k
 import separation as s
 
-# function to do arithmetic operations
 def toOperate(value, value2, value3):
     v = None
     digit = []
@@ -26,8 +25,6 @@ def toOperate(value, value2, value3):
         v = value * value3
        
         if v > 20:
-            # digit.append(v // 10)
-            # digit.append(v % 10)
             digit = s.change(v)
            
             return digit
@@ -35,7 +32,7 @@ def toOperate(value, value2, value3):
             digit.append(v)
             return digit
 
-input_string = "BEESTH JAMA BEESTH".split()
+input_string = "BEESTH JAMA SAY".split()
 tokens = []
 for word in input_string:
     if word in k.NUMBERS:
